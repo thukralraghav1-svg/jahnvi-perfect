@@ -1,39 +1,14 @@
-// Loader
-window.onload=()=>{
-setTimeout(()=>{
-document.getElementById("loader").style.display="none";
-document.getElementById("bgMusic").play();
-},2000);
-};
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const loader = document.getElementById("loader");
+        const main = document.getElementById("main");
 
-// Scroll
-function goTo(id){
-document.getElementById(id).scrollIntoView();
-}
-
-// Quotes
-let quotes=[
-"One Kiss All It Takes To Fall In Love With Me 💋",
-"I thought this was the best thing that ever happened to me… but then you happened.💫",
-"You’re the person I’m meant to spend the rest of my life with.🥹❤️",
-"Shaadi is daal chawal for pachaas saal… till death do us part.❤️😄",
-"“Hum ek baar jeete hain, ek baar marte hain… aur pyaar bhi ek hi baar hota hai.”
-(Aur wo ek baar mujhe aapse ho chuka hai smjhe aap)❤️❤️"
-];
-
-let q=0;
-document.getElementById("quoteText").innerText=quotes[0];
-
-function nextQuote(){
-q=(q+1)%quotes.length;
-document.getElementById("quoteText").innerText=quotes[q];
-}
-
-// Music
-function playSong(song,msg){
-
-let player=document.getElementById("player");
-player.src="assets/music/"+song;
+        if (loader && main) {
+            loader.style.display = "none";
+            main.style.display = "block";
+        }
+    }, 2000); // 2 sec baad site open hogi
+});
 player.play();
 
 showPopup(msg);
