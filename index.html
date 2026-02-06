@@ -1,65 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Raghav ❤️ Jahnvi</title>
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Jahnvi ❤️ Raghav</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-
-<!-- LOADER -->
+<!-- Loader -->
 <div id="loader">
   <h1>Loading Our Love ❤️</h1>
 </div>
 
-
-<!-- MAIN WEBSITE -->
+<!-- Main Website -->
 <div id="main">
 
+<nav>
+  <a onclick="showSection('home')">Home</a>
+  <a onclick="showSection('journey')">Journey</a>
+  <a onclick="showSection('letters')">Letters</a>
+  <a onclick="showSection('quotes')">Quotes</a>
+  <a onclick="showSection('gallery')">Gallery</a>
+  <a onclick="showSection('videos')">Videos</a>
+  <a onclick="showSection('music')">Music</a>
+  <a onclick="showSection('proposal')">Proposal</a>
+</nav>
 
-<header>
-  Raghav ❤️ Jahnvi
-</header>
-
-
-<!-- HOME -->
-<section id="home">
-  <h1>My Forever Love 💖</h1>
-  <p>You are my today and all my tomorrows ✨</p>
+<!-- Home -->
+<section id="home" class="page active">
+  <h1>Jahnvi ❤️ Raghav</h1>
+  <p>Forever Together 💖</p>
 </section>
 
+<!-- Journey -->
+<section id="journey" class="page">
+  <h2>Our Journey 🛤️</h2>
 
-<!-- PROPOSAL -->
-<section id="proposal">
+  <h3>How It Started 💫</h3>
+  <p>23 Dec 2022 – Love at first sight ❤️</p>
 
-  <h2>Will You Be Mine Forever? 💍</h2>
+  <h3>How It Went 🌈</h3>
+  <p>From coaching to Domino’s… always together 😘</p>
 
-  <div class="btns">
-    <button onclick="yesClick()">YES ❤️</button>
-    <button onclick="alwaysClick()">ALWAYS 💖</button>
+  <h3>How It’s Going 🫶</h3>
+  <p>Long distance but forever close 💍</p>
+</section>
+
+<!-- Letters -->
+<section id="letters" class="page">
+  <h2>Love Letters 💌</h2>
+
+  <div class="card">My Jaanu ❤️ You are my forever</div>
+  <div class="card">My Booboo 💕 Life is beautiful with you</div>
+  <div class="card">My Love 💖 Always yours</div>
+</section>
+
+<!-- Quotes -->
+<section id="quotes" class="page">
+  <h2>Quotes 💬</h2>
+
+  <p>💋 One kiss all it takes</p>
+  <p>💫 Then you happened</p>
+  <p>🥹 You're my forever</p>
+  <p>😄 Shaadi = daal chawal</p>
+  <p>❤️ Pyaar ek hi baar</p>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="page">
+  <h2>Gallery 📸</h2>
+
+  <div class="grid">
+    <img src="assets/images/pic1.jpg">
+    <img src="assets/images/pic2.jpg">
+    <img src="assets/images/pic3.jpg">
+    <img src="assets/images/pic4.jpg">
+    <img src="assets/images/pic5.jpg">
+    <img src="assets/images/pic6.jpg">
+    <img src="assets/images/pic7.jpg">
+    <img src="assets/images/pic8.jpg">
+    <img src="assets/images/pic9.jpg">
+    <img src="assets/images/pic10.jpg">
+    <img src="assets/images/pic11.jpg">
+    <img src="assets/images/pic12.jpg">
+    <img src="assets/images/pic13.jpg">
+    <img src="assets/images/pic14.jpg">
+    <img src="assets/images/couple.jpg">
+    <img src="assets/images/couple1.jpg">
+    <img src="assets/images/couple2.jpg">
   </div>
-
 </section>
 
+<!-- Videos -->
+<section id="videos" class="page">
+  <h2>Videos 🎥</h2>
 
-<!-- POPUP -->
-<div id="popup"></div>
+  <video controls src="assets/videos/love.mp4"></video>
+  <video controls src="assets/videos/love1.mp4"></video>
+  <video controls src="assets/videos/love2.mp4"></video>
+  <video controls src="assets/videos/love3.mp4"></video>
+</section>
 
+<!-- Music -->
+<section id="music" class="page">
+  <h2>Music 🎵</h2>
 
-<!-- RING + CONFETTI BOX -->
-<div id="ringBox"></div>
+  <audio controls src="assets/music/bg.mp3"></audio>
+  <audio controls src="assets/music/song1.mp3"></audio>
+  <audio controls src="assets/music/song2.mp3"></audio>
+  <audio controls src="assets/music/song3.mp3"></audio>
+</section>
 
+<!-- Proposal -->
+<section id="proposal" class="page">
+  <h2>Will You Marry Me? 💍</h2>
+
+  <button onclick="yesClick()">YES ❤️</button>
+  <button onclick="alwaysClick()">ALWAYS 💖</button>
+
+  <div id="popup"></div>
+  <div id="ringBox"></div>
+</section>
 
 </div>
 
-
 <script src="script.js"></script>
-
 </body>
 </html>
-
