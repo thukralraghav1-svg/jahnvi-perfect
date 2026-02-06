@@ -1,363 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My BOOBOO ❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Our Own Universe | Jahnvi & Raghav</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --pink: #ff4d6d; --dark-rose: #a4133c; --glass: rgba(0, 0, 0, 0.7); }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        body { background: #000; color: #fff; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+        
+        .page { 
+            display: none; min-height: 100vh; width: 100vw; padding: 20px;
+            flex-direction: column; align-items: center; justify-content: center;
+            text-align: center; background-size: cover; background-position: center;
+            position: relative; transition: opacity 0.5s ease;
+        }
+        .active { display: flex; animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+        .glass-card {
+            background: var(--glass); backdrop-filter: blur(8px);
+            padding: 20px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);
+            width: 100%; max-height: 80vh; overflow-y: auto; margin-bottom: 20px;
+        }
 
+        h1, h2 { font-family: 'Dancing Script', cursive; color: var(--pink); margin-bottom: 15px; }
+        h1 { font-size: 2.8rem; }
+        p { font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px; }
+        h3 { color: var(--pink); margin-top: 20px; border-bottom: 1px solid var(--pink); display: inline-block; }
+
+        button {
+            padding: 15px 25px; border: none; border-radius: 50px;
+            background: linear-gradient(45deg, var(--pink), var(--dark-rose));
+            color: white; font-weight: 600; cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4); margin: 10px 0;
+        }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; }
+        .grid img { width: 100%; border-radius: 12px; border: 1px solid var(--pink); height: 150px; object-fit: cover; }
+
+        .video-box { width: 100%; border-radius: 15px; margin-bottom: 15px; border: 1px solid #fff; }
+
+        .song-btn { width: 100%; border-radius: 15px; margin: 10px 0; border: 3px solid var(--pink); overflow: hidden; }
+        .song-btn img { width: 100%; display: block; }
+
+        .heart { position: fixed; color: var(--pink); pointer-events: none; z-index: 99; animation: fly 3s linear forwards; }
+        @keyframes fly { 0% { transform: translateY(100vh) scale(0); opacity: 1; } 100% { transform: translateY(-10vh) scale(1.5); opacity: 0; } }
+
+        #noBtn { transition: 0.2s; position: relative; }
+        #alwaysBtn { background: #ffd700; color: #000; transform: scale(1.1); }
+    </style>
 </head>
 <body>
 
-<!-- Loader -->
-<div id="loader">Loading Our Love ❤️</div>
-
-<!-- Background Music -->
-<audio id="bgMusic" loop>
-  <source src="assets/music/bg.mp3">
-</audio>
-
-<!-- Navbar -->
-<nav>
-<a href="#home">Home</a>
-<a href="#journey">Journey</a>
-<a href="#gallery">Gallery</a>
-<a href="#letters">Letters</a>
-<a href="#video">Video</a>
-<a href="#music">Music</a>
-<a href="#quotes">Quotes</a>
-<a href="#memories">Memories</a>
-<a href="#final">Proposal</a>
-</nav>
-
-<!-- HOME -->
-<section id="home" class="hero">
-<div class="overlay"></div>
-
-<div class="hero-content">
-<h1>Our Forever Story ❤️</h1>
-
-<p>
-Every love story is beautiful<br>
-But ours is my favourite ❤️
-</p>
-
-<button onclick="goTo('journey')">Enter Our World 💕</button>
-</div>
-</section>
-
-<!-- JOURNEY -->
-<section id="journey" class="section">
-
-<h2>Our Journey 💖</h2>
-
-<div class="timeline">
-
-<div class="card">
-<h3>HOW IT STARTED 🌸</h3>
-<p>
-it was 23rd December 2022. St conrad's inter college backfield when I saw this beautiful girl wearing red and blue check shirt with black jeans and brown overcoat 💃🐬✨ dancing like a dolphin unbothered about the crowd 😍🙈
-  about someone who's constantly staring at her 👀❤️ who has lost all his senses 🤯💘 and is just gazing at her moves ✨💫 her hairs waving like clouds ☁️💖 although jooda bana rkha tha woh high clip wala! 😁🌸💞 
-  Sweat running all over the body 💦🔥 was looking just perfect 😍👌💯. Ussi time maine soch liya tha ki Raghavvv abb toh bss yeh hi chaiye yeh nhi toh koi nhi!! 💖💍🥰 I still remember that phoolon waala handkerchief 🌼🧣 
-  jiss se madam ji apna paseena wipe kr rhi thi!! 😍💗🤭 Ahhhaa ahaa kya nazara tha ✨🌈 koi soch skte hai ki paseena pochte dekh bhi pyaar ho skta hai 💦❤️🥹 haaa bhai ho skta hai mujhe hua hai wo bhi sirf aapse jahnvi ji!! 💘💞😘❤️ 
-  Movies mei dikhate hai ki jab aapko love of your life milta hai 🎬💑✨ toh hawayein thandi hojati hai 🍃❄️ aaspaas sab gayab hojata hai 🌍🌫️ aur sirf vhi insaan dikhta hai 👩‍❤️‍👨💖 aap kho jaate ho 😵‍💫💕 mere saath bhi yeh sb hua 😍💝
-  mujhe sirf jahnvi dikh rhi thi 💫❤️ sirf aap aur koi nhi 💕🙈 aur aapko bhi koi nhi dikh rha tha 🥹💘. Dil le gayi aap meraaa ❤️❤️💓💞💖✨
-</p>
-</div>
-
-<div class="card">
-<h3>HOW IT WENT 💞</h3>
-<p>
-I am sure it was God's plan to make us meet and be partners of life 🙏💖✨ coz isko dekhne ke baad meri life mei kuch aisi tragedy hui 😔💔 ki shifted my house 🏠📦 
-  wo bhi ek aise area mei jaha mei kbhi aaya hi nhi tha 🌍🤍 mei waha shift hua coz mumma ki job tha 👩‍💼💼💙 hamare shift hone ke baad unki job bhi chli gayi thi 😞💔 
-  but mujhe jahnvi mil gyi thi 💘🥹❤️ iske peeche peeche maine mayur Sharma bhi join Krli 📚✍️✨ mujhe kya pta tha ki mere liye wo coaching jaana pdhai krne se zyada pyaar krne mei fruitful hoga!! 😍📖➡️💞🥰 
-  Fir toh school mei bhi saath 🏫💑 coaching mei bhi saath 📚❤️ madam ji ke saath paidal paidal 👣💘 unke ghr tk jaata tha 🏠🥹💞 pr meri bholi masoom jahnvi 🥺🌸💖 jo yeh smjh hi nhi payi 😅💭 
-  ki ek ldka paidal paidal apne ghr se dur 😵‍💫👣 sirf mere ko chhodne aarha hai ❤️🙈 aur waapis ghr Jaa rha hai 🚶‍♂️🏠💔 toh wo mujhse pyaar kr rha hai!! 😍💘💯 Aapke saath urban Mart pr baithne se leke 🛒💑✨ 
-  Dominos pr hamari 1st year anniversary celebrate krne tk 🍕🎉❤️ it was a complete tragic yet beautiful roller coaster ride 🎢💞🥹 jisme bahaut saare kalesh hue 😤💥 bahaut saare aasu bahaein 😭💧
-  dono ne 💔❤️ bahaut ladayi hui 😠⚡ bahaut saara ek doosre ko pyaar diya!! 💖🤗💑✨
-</p>
-</div>
-
-<div class="card">
-<h3>HOW IT IS GOING ✨</h3>
-<p>
-How it is going 💖✨ Ik abhi long distance chl rha hai 😔📱💔 but I am sure ki very soon this long distance will end 🙏💞✨ and we'll again be together under a single roof! 🏠❤️🥹 
-  Sleeping with each other in a single blanket 🛌🫂💘 decorating our home the way we want 🏡🎨✨ coming tired with a hectic office day 😩💼💤 and being eachother's peace!! 😌💖🫶🏻
-  Cooking for each other 👩‍🍳👨‍🍳❤️ taking showers together 🚿💞🙈 watching our favourite tv show FRIENDS 📺💙😂 on weekends 🛋️🍿✨ random going to random shopping spree 🛍️😄💫
-  buying groceries for our home 🛒🏠💖 and lot more things coming up together 💑🌈✨. Jahnvi I see the future with you 🔮❤️🥹 a complete happily married life ever after 💍👫💞✨ 
-  pls be always mine pls 🥺💖🫶🏻✨
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="section soft">
-
-<h2>Our Memories 📸</h2>
-
-<div class="gallery">
-
-<script>
-for(let i=1;i<=14;i++){
-document.write(`<img src="assets/images/pic${i}.jpg">`);
-}
-</script>
-
-<img src="assets/images/couple.jpg">
-<img src="assets/images/couple1.jpg">
-<img src="assets/images/couple2.jpg">
-<img src="assets/images/couple3.jpg">
-
-</div>
-</section>
-
-<!-- LETTERS -->
-<section id="letters" class="section">
-
-<h2>Love Letters 💌</h2>
-
-<div class="letters">
-
-<div class="letter">My Jaanu ❤️🥹,
-
-Jab bhi mei apni life ke sabse khoobsurat pal sochta hu na… har jagah bas tu hi dikhti hai 💫💖
-Teri hasi, tera gussa, tera care karna, mera naam lene ka tareeka… sab kuch mere dil mei permanently save ho chuka hai 😘🔐
-
-Jaanu, tu sirf meri girlfriend nahi hai… tu meri strength hai, meri smile hai, meri prayer hai 🙏❤️
-Jab mei weak hota hu, tu mujhe strong banati hai 💪🥹
-Jab mei confuse hota hu, tu mera raasta ban jaati hai 🌈✨Tere saath bitaya har moment meri life ka treasure hai 💎💕
-Chahe woh late-night chats ho 📱💬
-Ya bina wajah hansna 😂💞
-Ya ek dusre ko miss karna 🥺💌
-Sab kuch mere dil mei likha hua hai ❤️✍️
-
-Aur sun meri Jaanu…
-Mei tujhe sirf aaj ke liye nahi, poori zindagi ke liye chahta hu 💍👫
-Mei tujhe apni wife ke roop mei dekhna chahta hu 😍👰
-Hamare cute se bachche 👶👧
-Family trips 🚗🏖️
-Sunday mornings 🌞☕
-Sab tere saath hi imagine karta hu 💕
-✨ Shayari For You ✨
-
-“Tu mile toh lagta hai zindagi mil gayi,
-Tu saath ho toh har khushi mil gayi…
-Tujhse hi shuru, tujh pe hi khatam hoon mei,
-Meri har kahani tujhmein hi likh gayi…” ❤️🥰
-
-Jaanu, mei tujhe promise karta hu 🤞💖
-Hamesha respect karunga 🙏
-Hamesha protect karunga 🛡️
-Hamesha support karunga 🤝
-Chahe duniya idhar ki udhar ho jaaye 🌍💔
-Mei tera hi rahunga 💯❤️
-
-Love you beyond words 😘💞
-Forever yours,
-Suarrrrrrrr🐷❤️🥹</div>
-<div class="letter">My BooBoo 🐻💞,
-
-Pata hai jab tu “baby”, “jaan”, “love” bolti hai na…
-Mera dil literally melt ho jaata hai 😭❤️🫠
-
-Tu itni cute hai na ki kabhi-kabhi mujhe lagta hai mei lucky nahi… mei blessed hoon 😘🙏💖
-Teri smile meri medicine hai 💊🥰
-Tera hug meri therapy 🤗💞
-Aur tera pyaar meri life ka sabse bada gift 🎁❤️
-
-BooBoo, mei jab bhi sad hota hu na 😔
-Tu bina bole sab samajh jaati hai 🥺💗
-Aur phir apne pyaar se mujhe wapas happy bana deti hai 😊🌈Tu meri best friend bhi hai 👯‍♀️
-Meri girlfriend bhi 😍
-Meri future wife bhi 💍
-Aur meri life partner bhi 🤝❤️
-
-Mei tere saath buddha hona chahta hu 👴👵😂
-Tere saath ghar banana chahta hu 🏠💞
-Tere saath apni duniya basana chahta hu 🌍❤️
-
-Hamari life aisi hogi na 😍👇
-➡️ Subah good morning kiss 😘
-➡️ Shaam ko saath chai ☕💕
-➡️ Raat ko movies 🎬🍿
-➡️ Weekend pe date 🥰💐
-➡️ Aur hamesha ek dusre ka haath pakad ke chalna 🤝💖BooBoo, mei tujhe kabhi akela feel nahi hone dunga 🤍🤞
-Har dream mei tera saath dunga ✨
-Har struggle mei tera haath pakadunga 💪❤️
-
-Tu meri princess hai 👑💗
-Aur mei tera lifetime partner 😘🔐
-
-Love you infinity ♾️💕
-Your forever,
-BKLLLL❤️❤️</div>
-<div class="letter">My JAANUUUU ❤️🥰,
-
-Jab se Aap meri life mei aaye ho na…
-Tab se har din special ban gaya hai 💫💖
-
-Aap meri zindagi ka sabse pyaara chapter ho 📖💕
-Jisme sirf love hai ❤️
-Respect hai 🙏
-Care hai 🤗
-Trust hai 🤝
-Aur endless devotion hai 🥹💞
-
-Aap ke saath mei khud ka best version banta hu 😘✨
-Aap mujhe motivate karte ho 💪
-Mujhe samajhte ho 🥺
-Mujhe deserve se zyada pyaar dete ho 💗Mei chahta hu ki jab future mei koi puche…
-“Tumhari success ka reason kya hai?”
-Mei proudly bolu — Meri Aap ❤️ 😍🔥
-
-🌸 Poem For You 🌸
-
-Tum meri subah ki roshni ho ☀️
-Tum meri raat ka sukoon ho 🌙
-Tum meri har dua ka jawaab ho 🙏
-Tum meri zindagi ka junoon ho ❤️
-
-Tum saath ho toh sab aasaan lagta hai 💫
-Tum door ho toh sab suna lagta hai 😔
-Tum hi mera kal ho, tum hi mera aaj 💞
-Tum bin mera har sapna adhoora lagta hai…” 💕🥺
-
-Aap, mei sapna dekhta hu ki hum dono ek din shaadi karenge 💍😍
-Apna pyara sa ghar hoga 🏡💖Apne naughty se bachche honge 👶😂
-Aur hum unko apni love story sunayenge 📖❤️
-
-Mei Aap se vaada karta hu 🤞💗
-Kabhi aapko hurt nahi karunga 😔❌
-Kabhi aapka saath nahi chhodunga 🚫💔
-Aur hamesha aapka proud partner rahunga 😘💪
-
-Aap meri duniya ho 🌍❤️
-Meri jaan ho 💞
-Mera sab kuch ho 🥹💖
-
-Forever yours,
-Raghavvvvvv💕💋❤️</div>
-
-</div>
-</section>
-
-<!-- VIDEO -->
-<section id="video" class="section soft">
-
-<h2>Our Special Moments 🎬</h2>
-
-<div class="video-grid">
-
-<video controls src="assets/videos/love.mp4"></video>
-<video controls src="assets/videos/love1.mp4"></video>
-<video controls src="assets/videos/love2.mp4"></video>
-<video controls src="assets/videos/love3.mp4"></video>
-
-</div>
-</section>
-
-<!-- MUSIC -->
-<section id="music" class="section">
-
-<h2>Our Songs 🎵</h2>
-
-<div class="music-grid">
-
-<div class="song" onclick="playSong('song1.mp3','THIS IS HOW IT ALL STARTED BABY ❤️')">
-<img src="assets/images/pic1.jpg">
-<h4>First Date 💕</h4>
-</div>
-
-<div class="song" onclick="playSong('song2.mp3','I WILL ALWAYS BE THERE FOR YOU ❤️')">
-<img src="assets/images/pic2.jpg">
-<h4>Late Calls 🌙</h4>
-</div>
-
-<div class="song" onclick="playSong('song3.mp3','TU MERA PEHLA AUR AKHRI PYAAR 💋')">
-<img src="assets/images/pic3.jpg">
-<h4>Forever 💍</h4>
-</div>
-
-</div>
-
-<audio id="player"></audio>
-</section>
-
-<!-- QUOTES -->
-<section id="quotes" class="quote">
-
-<div class="overlay"></div>
-
-<div class="quote-box">
-<h2 id="quoteText"></h2>
-<button onclick="nextQuote()">Next 💫</button>
-</div>
-
-</section>
-
-<!-- MEMORIES -->
-<section id="memories" class="section soft">
-
-<h2>Memory Wall 💖</h2>
-
-<div class="memory-grid">
-
-<div class="memory">
-<img src="assets/images/pic10.jpg">
-<p>First Pic 💕<br>31 May 2023</p>
-</div>
-
-<div class="memory">
-<img src="assets/images/pic11.jpg">
-<p>First Hug 🤍<br>28 Oct 2023</p>
-</div>
-
-<div class="memory">
-<img src="assets/images/pic12.jpg">
-<p>First Ride 🎡<br>26 Jan 2024</p>
-</div>
-
-<div class="memory">
-<img src="assets/images/pic13.jpg">
-<p>First Bite 🍰<br>5 May 2024</p>
-</div>
-
-<div class="memory">
-<img src="assets/images/pic14.jpg">
-<p>GF Day 💋<br>1 Aug 2024</p>
-</div>
-
-</div>
-</section>
-
-<!-- FINAL -->
-<section id="final" class="final">
-
-<h1>Will You Be My Valentine Forever? ❤️</h1>
-
-<div class="buttons">
-<button onclick="yesClick()">YES 💖</button>
-<button onclick="alwaysClick()">ALWAYS 💍</button>
-</div>
-
-</section>
-
-<!-- POPUP -->
-<div id="popup"></div>
-
-<!-- RING -->
-<div id="ringBox">
-<img src="https://i.imgur.com/J5q7R7A.png">
-<h2>NOW YOU ARE MINE ❤️</h2>
-<h3>AND I AM YOURS FOREVER 💍</h3>
-</div>
-
-<script src="script.js"></script>
+    <audio id="bgMusic" loop> <source src="bg.mp3" type="audio/mpeg"> </audio>
+
+    <div id="p1" class="page active" style="background-image: url('couple.jpg');">
+        <div class="glass-card">
+            <h1>Jahnvi & Raghav</h1>
+            <p style="font-size: 1.2rem;">"The only person I want to be with in our own universe."</p>
+            <button onclick="startApp()">LET'S ENTER OUR OWN UNIVERSE ✨</button>
+        </div>
+    </div>
+
+    <div id="p2" class="page" style="background: #111;">
+        <h2>Our Journey ❤️</h2>
+        <div class="glass-card" style="text-align: left;">
+            <h3>HOW IT STARTED</h3>
+            <p>it was 23rd December 2022. St conrad's inter college backfield when I saw this beautiful girl wearing red and blue check shirt with black jeans and brown overcoat 💃🐬✨ dancing like a dolphin unbothered about the crowd 😍🙈 about someone who's constantly staring at her 👀❤️ who has lost all his senses 🤯💘 and is just gazing at her moves ✨💫 her hairs waving like clouds ☁️💖 although jooda bana rkha tha woh high clip wala! 😁🌸💞 Sweat running all over the body 💦🔥 was looking just perfect 😍👌💯. Ussi time maine soch liya tha ki Raghavvv abb toh bss yeh hi chaiye yeh nhi toh koi nhi!! 💖💍🥰 I still remember that phoolon waala handkerchief 🌼🧣 jiss se madam ji apna paseena wipe kr rhi thi!! 😍💗🤭 Ahhhaa ahaa kya nazara tha ✨🌈 koi soch skte hai ki paseena pochte dekh bhi pyaar ho skta hai 💦❤️🥹 haaa bhai ho skta hai mujhe hua hai wo bhi sirf aapse jahnvi ji!! 💘💞😘❤️ Movies mei dikhate hai ki jab aapko love of your life milta hai 🎬💑✨ toh hawayein thandi hojati hai 🍃❄️ aaspaas sab gayab hojata hai 🌍🌫️ aur sirf vhi insaan dikhta hai 👩&zwj;❤️&zwj;👨💖 aap kho jaate ho 😵‍💫💕 mere saath bhi yeh sb hua 😍💝 mujhe sirf jahnvi dikh rhi thi 💫❤️ sirf aap aur koi nhi 💕🙈 aur aapko bhi koi nhi dikh rha tha 🥹💘. Dil le gayi aap meraaa ❤️❤️💓💞💖✨</p>
+            
+            <h3>HOW IT WENT</h3>
+            <p>I am sure it was God's plan to make us meet and be partners of life 🙏💖✨ coz isko dekhne ke baad meri life mei kuch aisi tragedy hui 😔💔 ki shifted my house 🏠📦 wo bhi ek aise area mei jaha mei kbhi aaya hi nhi tha 🌍🤍 mei waha shift hua coz mumma ki job tha 👩&zwj;💼&zwj;💼💙 hamare shift hone ke baad unki job bhi chli gayi thi 😞💔 but mujhe jahnvi mil gyi thi 💘🥹❤️ iske peeche peeche maine mayur Sharma bhi join Krli 📚✍️✨ mujhe kya pta tha ki mere liye wo coaching jaana pdhai krne se zyada pyaar krne mei fruitful hoga!! 😍📖➡️💞🥰 Fir toh school mei bhi saath 🏫💑 coaching mei bhi saath 📚❤️ madam ji ke saath paidal paidal 👣💘 unke ghr tk jaata tha 🏠🥹💞 pr meri bholi masoom jahnvi 🥺🌸💖 jo yeh smjh hi nhi payi 😅💭 ki ek ldka paidal paidal apne ghr se dur 😵‍💫👣 sirf mere ko chhodne aarha hai ❤️🙈 aur waapis ghr Jaa rha hai 🚶&zwj;♂️🏠💔 toh wo mujhse pyaar kr rha hai!! 😍💘💯 Aapke saath urban Mart pr baithne se leke 🛒💑✨ Dominos pr hamari 1st year anniversary celebrate krne tk 🍕🎉❤️ it was a complete tragic yet beautiful roller coaster ride 🎢💞🥹 jisme bahaut saare kalesh hue 😤💥 bahaut saare aasu bahaein 😭💧 dono ne 💔❤️ bahaut ladayi hui 😠⚡ bahaut saara ek doosre ko pyaar diya!! 💖🤗💑✨</p>
+            
+            <h3>HOW IT IS GOING</h3>
+            <p>How it is going 💖✨ Ik abhi long distance chl rha hai 😔📱💔 but I am sure ki very soon this long distance will end 🙏💞✨ and we'll again be together under a single roof! 🏠❤️🥹 Sleeping with each other in a single blanket 🛌🫂💘 decorating our home the way we want 🏡🎨✨ coming tired with a hectic office day 😩💼💤 and being eachother's peace!! 😌💖🫶🏻 Cooking for each other 👩&zwj;🍳👨&zwj;🍳❤️ taking showers together 🚿💞🙈 watching our favourite tv show FRIENDS 📺💙😂 on weekends 🛋️🍿✨ random going to random shopping spree 🛍️😄💫 buying groceries for our home 🛒🏠💖 and lot more things coming up together 💑🌈✨. Jahnvi I see the future with you 🔮❤️🥹 a complete happily married life ever after 💍👫💞✨ pls be always mine pls 🥺💖🫶🏻✨</p>
+        </div>
+        <button onclick="showPage(3)">Our Gallery 📸</button>
+    </div>
+
+    <div id="p3" class="page" style="background: #000;">
+        <h2>Gallery Wall</h2>
+        <div class="glass-card">
+            <div class="grid">
+                <img src="pic1.jpg"><img src="pic2.jpg">
+                <img src="pic3.jpg"><img src="pic4.jpg">
+                <img src="pic5.jpg"><img src="pic6.jpg">
+                <img src="pic7.jpg"><img src="pic8.jpg">
+            </div>
+        </div>
+        <button onclick="showPage(4)">Love Letters 💌</button>
+    </div>
+
+    <div id="p4" class="page" style="background: #1a0a0c;">
+        <div class="glass-card" style="text-align: left;">
+            <h2 id="letterTitle">My Jaanu ❤️🥺</h2>
+            <p id="letterBody" style="white-space: pre-line;"></p>
+        </div>
+        <button id="letterBtn" onclick="nextLetter()">Next Letter ➡️</button>
+    </div>
+
+    <div id="p5" class="page" style="background: #000;">
+        <h2>Our Videos 🎥</h2>
+        <div class="glass-card">
+            <video class="video-box" src="love.mp4" controls></video>
+            <video class="video-box" src="love1.mp4" controls></video>
+            <video class="video-box" src="love2.mp4" controls></video>
+        </div>
+        <button onclick="showPage(6)">Quotes ✍️</button>
+    </div>
+
+    <div id="p6" class="page" style="background-image: url('couple3.jpg');">
+        <div class="glass-card">
+            <h2>Quotes for You</h2>
+            <p id="quoteBox" style="font-style: italic; font-size: 1.2rem;"></p>
+            <button onclick="showPage(7)">Our Music 🎵</button>
+        </div>
+    </div>
+
+    <div id="p7" class="page" style="background: #111;">
+        <h2>Tap to Listen 🎧</h2>
+        <div class="glass-card">
+            <div class="song-btn" onclick="playSong('song1.mp3')"><img src="couple1.jpg"></div>
+            <div class="song-btn" onclick="playSong('song2.mp3')"><img src="pic8.jpg"></div>
+            <div class="song-btn" onclick="playSong('song3.mp3')"><img src="couple3.jpg"></div>
+        </div>
+        <button onclick="showPage(8)">Memories 🕰️</button>
+    </div>
+
+    <div id="p8" class="page" style="background: #000;">
+        <h2>Memories 🕰️</h2>
+        <div class="glass-card">
+            <div style="margin-bottom:20px;"><img src="pic10.jpg" style="width:100%; border-radius:15px;"><p><b>First Pic Of Her</b><br>31st May 2023</p></div>
+            <div style="margin-bottom:20px;"><img src="pic11.jpg" style="width:100%; border-radius:15px;"><p><b>First Hug</b><br>28th Oct 2023</p></div>
+            <div style="margin-bottom:20px;"><img src="pic12.jpg" style="width:100%; border-radius:15px;"><p><b>First Amusement Ride</b><br>26th Jan 2024</p></div>
+            <div style="margin-bottom:20px;"><img src="pic13.jpg" style="width:100%; border-radius:15px;"><p><b>First Bite</b><br>5th May 2024</p></div>
+            <div style="margin-bottom:20px;"><img src="pic14.jpg" style="width:100%; border-radius:15px;"><p><b>First Girlfriends Day</b><br>1st Aug 2024</p></div>
+        </div>
+        <button onclick="showPage(9)">The Big Question 💍</button>
+    </div>
+
+    <div id="p9" class="page" style="background: #1a0000;">
+        <h1 id="propTitle">WILL YOU BE MY VALENTINE BOOOBOOO??</h1>
+        <div id="controls">
+            <button id="yesBtn" onclick="handleYes()">YES</button><br>
+            <button id="noBtn" onclick="handleNo()">NO</button><br>
+            <button id="alwaysBtn" onclick="handleAlways()">ALWAYS ❤️</button>
+        </div>
+        <div id="final" style="display:none;">
+            <h2 style="font-size: 3rem;">💍 ❤️</h2>
+            <h2 style="color: #ffd700;">You Pick The Right Choice!</h2>
+            <p>Now You And Me Belong Together Forever ❤️</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        const letterData = [
+            {t: "My Jaanu ❤️🥺", b: `Jab bhi mei apni life ke sabse khoobsurat pal sochta hu na… har jagah bas tu hi dikhti hai 💫💖\nJaanu, tu sirf meri girlfriend nahi hai… tu meri strength hai, meri smile hai, meri prayer hai 🙏❤️\nMei tujhe sirf aaj ke liye nahi, poori zindagi ke liye chahta hu 💍👫\nForever yours, Suarrrrrr🐷❤️💋`},
+            {t: "My BooBoo 🐻💞", b: `Pata hai jab tu “baby”, “jaan”, “love” bolti hai na… Mera dil literally melt ho jaata hai 😭❤️🫠\nBooBoo, mei tujhe kabhi akela feel nahi hone dunga 🤍🤞\nLove you infinity ♾️💕\nYour forever, BKLLLLL❤️❤️❤️`},
+            {t: "My Rasmalaiii ❤️🥰", b: `Jab se Aap meri life mei aaye ho na… Tab se har din special ban gaya hai 💫💖\nAap meri zindagi ka sabse pyaara chapter ho 📖💕\nMei Aap se vaada karta hu 🤞💗 Kabhi aapka saath nahi chhodunga 🚫💔\nForever yours, Raghavvvvvv 💘`}
+        ];
+
+        const quotes = [
+            "“I thought this was the best thing that ever happened to me… but then you happened.” 💫",
+            "“You’re the person I’m meant to spend the rest of my life with.” 🥹❤️",
+            "One Kiss All It Takes To Fall In Love With Me 💋",
+            "“Shaadi is daal chawal for pachaas saal… till death do us part.” ❤️😄",
+            "“Hum ek baar jeete hain, ek baar marte hain… aur pyaar bhi ek hi baar hota hai.”"
+        ];
+
+        let LIndex = 0;
+        let noClicks = 0;
+
+        function startApp() {
+            document.getElementById('bgMusic').play();
+            showPage(2);
+            setInterval(createHeart, 400);
+        }
+
+        function showPage(n) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById('p' + n).classList.add('active');
+            if(n === 4) nextLetter();
+            if(n === 6) { document.getElementById('quoteBox').innerText = quotes[Math.floor(Math.random()*quotes.length)]; }
+        }
+
+        function nextLetter() {
+            if(LIndex >= letterData.length) { showPage(5); return; }
+            document.getElementById('letterTitle').innerText = letterData[LIndex].t;
+            document.getElementById('letterBody').innerText = letterData[LIndex].b;
+            LIndex++;
+            if(LIndex === 3) document.getElementById('letterBtn').innerText = "See Our Videos 🎥";
+        }
+
+        function playSong(file) {
+            let a = new Audio(file);
+            a.play();
+        }
+
+        function handleNo() {
+            noClicks++;
+            if(noClicks < 4) {
+                document.getElementById('noBtn').style.transform = `scale(${1 - noClicks*0.25})`;
+            } else {
+                document.getElementById('noBtn').style.display = 'none';
+            }
+        }
+
+        function handleYes() { alert("Try something else! 😉"); document.getElementById('yesBtn').style.display = 'none'; }
+
+        function handleAlways() {
+            document.getElementById('controls').style.display = 'none';
+            document.getElementById('propTitle').style.display = 'none';
+            document.getElementById('final').style.display = 'block';
+            confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
+        }
+
+        function createHeart() {
+            const h = document.createElement('div');
+            h.innerHTML = '❤️'; h.className = 'heart';
+            h.style.left = Math.random() * 100 + 'vw';
+            h.style.fontSize = Math.random() * 20 + 10 + 'px';
+            document.body.appendChild(h);
+            setTimeout(() => h.remove(), 3000);
+        }
+    </script>
 </body>
   </html>
-
+          
